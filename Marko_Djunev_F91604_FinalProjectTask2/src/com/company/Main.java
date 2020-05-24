@@ -2,7 +2,7 @@ package com.company;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InsufficientQuantityException {
         var cashier1 = new Cashier("Ivan");
         var cashier2 = new Cashier("Pesho");
         var cashier3 = new Cashier("Gosho");
@@ -25,7 +25,12 @@ public class Main {
         //shop.addGoods(product5);
 
         var cashDesk = new CashDesk(shop, cashier1);
+        var cashDesk2 = new CashDesk(shop, cashier2);
+
         shop.addCashDesk(cashDesk);
+        shop.addCashDesk(cashDesk2);
+
+        cashDesk2.addProduct(product1, 2);
         cashDesk.addProduct(product2, 2);
         cashDesk.addProduct(product1, 1);
         cashDesk.finalizeReceipt();
@@ -33,7 +38,16 @@ public class Main {
         cashDesk.finalizeReceipt();
         cashDesk.addProduct(product4, 2);
         cashDesk.finalizeReceipt();
-        
+        //cashDesk.addProduct(product5, 1); error because product5 is not offered in the shop
+        //cashDesk.finalizeReceipt(); error because there are no ordered products
+        //cashDesk.addProduct(product2, 4); //throws InsufficientQuantityException because product3 has 3 counts
+
+        //cashDesk.changeCashier(cashier2); // when the shift is over we can replace the cashier
+        //cashDesk.addProduct(product1, 1);
+        //cashDesk.finalizeReceipt();
+
         System.out.println(shop.toString());
+
+        System.out.println(shop.getReceiptsCount());
     }
 }

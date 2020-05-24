@@ -21,12 +21,16 @@ public class Goods {
         return this.identityNumber;
     }
 
+    public String getName() {
+        return this.name;
+    }
+
     public double getPrice() {
         return this.price;
     }
 
     public void increaseQuantity(int quantity){
-        this.quantity = quantity;
+        this.quantity += quantity;
     }
 
     public void decreaseQuantity(int quantity){

@@ -37,7 +37,17 @@ public class Shop {
         return false;
     }
 
-    public int receiptsCount(){
+    public boolean isCashierWorking(Cashier newCashier){
+        for (Cashier cashier:this.cashiers) {
+            if (cashier == newCashier){
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public int getReceiptsCount(){
         int count = 0;
 
         for (CashDesk cashDesk:this.cashDesks) {
@@ -57,13 +67,13 @@ public class Shop {
         return Math.round(this.turnover * 100.0) / 100.0;
     }
 
-
     @Override
     public String toString() {
         return "Shop{" +
                 "cashiers=" + cashiers +
                 ", goods=" + goods +
                 ", turnover=" + this.getTurnover() +
+                ", receiptsCount=" + this.getReceiptsCount() +
                 ", cashDesks=" + cashDesks +
                 '}';
     }

@@ -19,6 +19,10 @@ public class Receipt {
         this.orderProducts = new ArrayList<>();
     }
 
+    public int getSerialNumber() {
+        return this.serialNumber;
+    }
+
     public double getSum(){
         var price = 0d;
 
