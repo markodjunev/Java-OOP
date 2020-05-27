@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b755d82c-e9e1-4326-9fc3-a29c1d14f66b" name="Default Changelist" comment="" />
+    <list default="true" id="b755d82c-e9e1-4326-9fc3-a29c1d14f66b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/CashDesk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/CashDesk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,11 +20,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1bD86vFQ3lNiSodT4aKuv8WMLvd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -52,26 +64,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="570" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1590320308611">
+    <state x="570" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1590584060571">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="570" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1590320308611" />
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1590326801785">
+    <state x="570" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1590584060571" />
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1590585482139">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1590326801785" />
-    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1590326801785">
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1590585482139" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1590585482139">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1590326801785" />
-    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1590326801785">
+    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1590585482139" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1590585482139">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1590326801785" />
-    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1590326801785">
+    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1590585482139" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1590585482139">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1590326801785" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1590585482139" />
     <state width="1557" height="276" key="GridCell.Tab.1.bottom" timestamp="1588417056543">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -88,9 +100,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1557" height="276" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1588417056543" />
-    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1590317233200">
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1590574956215">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1590317233200" />
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1590574956215" />
   </component>
 </project>

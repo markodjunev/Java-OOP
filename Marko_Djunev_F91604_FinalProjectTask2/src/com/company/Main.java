@@ -2,7 +2,7 @@ package com.company;
 
 public class Main {
 
-    public static void main(String[] args) throws InsufficientQuantityException {
+    public static void main(String[] args) throws InsufficientQuantityException, InterruptedException {
         var cashier1 = new Cashier("Ivan");
         var cashier2 = new Cashier("Pesho");
         var cashier3 = new Cashier("Gosho");
@@ -29,15 +29,37 @@ public class Main {
 
         shop.addCashDesk(cashDesk);
         shop.addCashDesk(cashDesk2);
+        
+        var th1 = new Thread(new ProductSelling(cashDesk, product2, 2));
+        var th2 = new Thread(new ProductSelling(cashDesk, product1, 1));
+        th1.start();
+        th2.start();
 
-        cashDesk2.addProduct(product1, 2);
+        Thread.sleep(1000);
+        var f = new Thread(new FinalizeOrder(cashDesk));
+        f.start();
+
+
+        Thread.sleep(1000);
+
+        th1 = new Thread(new ProductSelling(cashDesk, product3, 2));
+        th1.start();
+
+        Thread.sleep(1000);
+
+        f = new Thread(new FinalizeOrder(cashDesk));
+        f.start();
+
+        Thread.sleep(1000);
+
+        /*cashDesk2.addProduct(product1, 2);
         cashDesk.addProduct(product2, 2);
         cashDesk.addProduct(product1, 1);
         cashDesk.finalizeReceipt();
         cashDesk.addProduct(product3, 2);
         cashDesk.finalizeReceipt();
         cashDesk.addProduct(product4, 2);
-        cashDesk.finalizeReceipt();
+        cashDesk.finalizeReceipt();*/
         //cashDesk.addProduct(product5, 1); error because product5 is not offered in the shop
         //cashDesk.finalizeReceipt(); error because there are no ordered products
         //cashDesk.addProduct(product2, 4); //throws InsufficientQuantityException because product3 has 3 counts

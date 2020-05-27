@@ -23,7 +23,7 @@ public class CashDesk {
         this.orderProducts = new ArrayList<>();
     }
 
-    public void addProduct(Goods goods, int quantity) throws InsufficientQuantityException {
+    public synchronized void addProduct(Goods goods, int quantity) throws InsufficientQuantityException {
        if (this.shop.containsGoods(goods)){
            if (quantity <= 0){
                System.out.println("The quantity must be a positive number!");
@@ -68,7 +68,7 @@ public class CashDesk {
         return sum;
     }
 
-    public void finalizeReceipt(){
+    public synchronized void finalizeReceipt(){
 
         var activeProducts = new ArrayList<OrderProduct>();
 
