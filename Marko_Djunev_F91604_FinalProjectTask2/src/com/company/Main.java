@@ -35,22 +35,37 @@ public class Main {
         th1.start();
         th2.start();
 
-        Thread.sleep(1000);
+        Thread.sleep(300);
+
         var f = new Thread(new FinalizeOrder(cashDesk));
         f.start();
 
 
-        Thread.sleep(1000);
+        Thread.sleep(300);
 
         th1 = new Thread(new ProductSelling(cashDesk, product3, 2));
         th1.start();
 
-        Thread.sleep(1000);
+        Thread.sleep(300);
 
         f = new Thread(new FinalizeOrder(cashDesk));
         f.start();
 
-        Thread.sleep(1000);
+        Thread.sleep(300);
+
+        th1 = new Thread(new ProductSelling(cashDesk2, product4, 10));
+        th2 = new Thread(new ProductSelling(cashDesk, product1, 1));
+        th1.start();
+        th2.start();
+
+        Thread.sleep(300);
+
+        var f2 = new Thread(new FinalizeOrder(cashDesk2));
+        f = new Thread(new FinalizeOrder(cashDesk));
+        f2.start();
+        f.start();
+
+        Thread.sleep(300);
 
         /*cashDesk2.addProduct(product1, 2);
         cashDesk.addProduct(product2, 2);

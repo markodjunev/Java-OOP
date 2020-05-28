@@ -1,0 +1,1 @@
+Receipt{serialNumber=4, cashier=Cashier{name='Ivan', serialNumber=1}, dateOfCreation=14:59:23.268390500, price=1.2, orderProducts=[OrderProduct{product name=Fanta, product price= 1.2, quantity=1, total price=1.2}]}
