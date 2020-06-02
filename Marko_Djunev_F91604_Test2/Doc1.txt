@@ -1,0 +1,1 @@
+Document{name='NBU', properties=READ_ONLY, size=5.0}%
